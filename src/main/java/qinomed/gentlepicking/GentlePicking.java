@@ -34,7 +34,7 @@ public class GentlePicking {
         BlockPos pos = event.getPos();
         Player player = event.getPlayer();
         BlockState state = level.getBlockState(pos);
-        if (level.mayInteract(player, pos) && !player.isSpectator() && state.is(PICKABLE) || (state.getBlock() instanceof FlowerBlock || state.getBlock() instanceof MushroomBlock || state.getBlock() instanceof FungusBlock) && !state.is(BLACKLIST)) {
+        if ((level.mayInteract(player, pos) && !player.isSpectator() && state.is(PICKABLE) || (state.getBlock() instanceof FlowerBlock || state.getBlock() instanceof MushroomBlock || state.getBlock() instanceof FungusBlock)) && !state.is(BLACKLIST)) {
             Block.dropResources(state, level, pos);
             level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1, 1);
             level.removeBlock(pos, false);
