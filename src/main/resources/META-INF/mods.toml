@@ -21,7 +21,7 @@ modId="gentlepicking" #mandatory
 # see the associated build.gradle script for how to populate this completely automatically during a build
 version="${file.jarVersion}" #mandatory
 # A display name for the mod
-displayName="GentlePicking" #mandatory
+displayName="Gentle Picking" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 #updateJSONURL="http://myurl.me/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
@@ -29,7 +29,7 @@ displayName="GentlePicking" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="logo.png" #optional
 # A text field displayed in the mod UI
-#credits="Thanks for this example mod goes to Java" #optional
+credits="Thanks to Shnupbups for the original Fabric mod!" #optional
 # A text field displayed in the mod UI
 authors="Qinomed, Shnupbups" #optional
 # Display Test controls the display for your mod in the server connection screen
